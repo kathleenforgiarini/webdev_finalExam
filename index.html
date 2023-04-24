@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam - Kathleen Forgiarini da Silva</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <p id="title">Inventory Management by Kathleen Forgiarini</p>
+    <main>
+        <section>
+            <h1>Inventory</h1>
+            <table id="tabInventory">
+                <thead>
+                    <th colspan="2">Item</th>
+                    <th rowspan="2">Quantity</th>
+                    </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h1>Purchase</h1>
+            <form id="purchaseForm">
+                <label for="selectItem">Which item has been purchased?</label>
+                <select id="selectItem" required>
+                    <option value="" selected>Select an item</option>
+                </select>
+
+                <label for="quantity">How many items have been purchased?</label>
+                <input type="number" id="quantity" min="0" required>
+
+                <button type="submit">Save the purchase</button>
+            </form>
+
+            <section>
+                <h1>Sale</h1>
+                <form id="saleForm">
+                    <label for="selectSaleItem">Which item has been sold?</label>
+                    <select id="selectSaleItem" required>
+                    </select>
+                    <label for="saleQuantity">How many items have been sold?</label>
+                    <input type="number" id="saleQuantity" min="0" required>
+                    <button type="submit">Save the sale</button>
+                </form>
+            </section>
+
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
