@@ -96,8 +96,8 @@ form {
     background-color: #065e09;
   }
 
-  @media (max-width:800px) {
-    main {
-      flex-direction: column;
+@media only screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
   }
 }
