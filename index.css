@@ -95,3 +95,9 @@ form {
   button:hover {
     background-color: #065e09;
   }
+
+  @media screen and (max-width:800px) {
+    main {
+      flex-direction: column;
+  }
+}
